@@ -9,10 +9,10 @@ end
  	@todo=Todo.new(todo_params)
  	if @todo.save
  		flash[:notice]="Todo was created Successfully!"
- 	redirect_to todo_path(@todo)
- else
- 	render 'new'
- end
+ 	   redirect_to todo_path(@todo)
+	 else
+	 	render 'new'
+	 end
  end
 
  def show
